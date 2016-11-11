@@ -20,6 +20,13 @@ node server.js
 4. Once you have the Dockerfile build and run your docker image and bind it to one of your host ports
 5. Show that the application works by loading it in your web browser
 
-## Credits and License
-Put together by [Dana Woodman](mailto:dana@danawoodman.com) and released under the MIT license. Have fun!
+## MYSQL demo
+Set the following environment vars:
 
+ - DBHOST (mysql host e.g. 127.0.0.1)
+ - DBUSER (mysql user e.g. root)
+ - DBPASS (mysql pass e.g. root)
+ - DBNAME (mysql database e.g. my database)
+
+#### GET http://localhost:4000/table
+You should see a table that increases with every request of the timestamp of the request
